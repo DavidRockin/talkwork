@@ -1,3 +1,6 @@
 [submodule "core/lib/dbal"]
 	path = core/lib/dbal
 	url = git://github.com/doctrine/dbal.git
+[submodule "core/lib/dice"]
+	path = core/lib/dice
+	url = git://github.com/TomBZombie/Dice.git
