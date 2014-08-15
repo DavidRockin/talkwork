@@ -3,4 +3,4 @@
 	url = git://github.com/doctrine/dbal.git
 [submodule "core/lib/dice"]
 	path = core/lib/dice
-	url = git://github.com/TomBZombie/Dice.git
+	url = git://github.com/garrettw/Dice.git

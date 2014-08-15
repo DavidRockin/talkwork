@@ -13,20 +13,20 @@ namespace Talkwork;
 class App
 {
     private $in; // holds an object of class Input
+    private $out;
     
-    public function __construct(Input $in, Router $r, TwDB $db)
+    public function __construct(Input $in, Route $r, TwDB $db)
     {
         $this->in = $in;
-        
+    }
+    
+    public function run()
+    {
         if (function_exists('mb_internal_encoding')
             && !@mb_internal_encoding($db->configs['core']['charset'])
         ):
             mb_internal_encoding('UTF-8');
         endif;
-        
-        // $route = $r->find(parsed($this->in));
-        // $model = new $route->model($this->in, $db);
-        // Courier anti-pattern ALERT!
         
         /* -- Code to be completely redone --
         session_name($this->string_to_slug($db->configs['core']['site-name']));
