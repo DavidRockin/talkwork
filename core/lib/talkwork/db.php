@@ -1,6 +1,6 @@
 <?php
 /**
- * File:  /core/TwDB.class.php
+ * File:  /core/DB.class.php
  * Database class extended with Tw-specific methods
  * 
  * @since      0.1
@@ -11,7 +11,7 @@
 
 namespace Talkwork;
 
-class TwDB extends MySQLDB
+class DB extends MySQLDB
 {
     public $configs;
     public $activeplugins;
